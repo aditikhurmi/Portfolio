@@ -1,94 +1,3 @@
-li{
-	padding-right : 20px;
-	font-size: 16px;
-}
-
-.main-info-section{
-	height: calc(100vh - 81.6px);
-}
-
-.text span{
-	display: inline-block;
-}
-
-.text{
-	margin-top: 140px;
-}
-
-.text h1{ 
-	color: white;
-	font-size: 5rem;
-	cursor: context-menu;
-}
-
-span:hover{
-	color: yellow;
-	transition: all .5s;
-}
-
-span.name {
-	color: black;
-}
-span.name:hover{
-	color:white;
-}
-
-span.m-left{
-	margin-left: -10px;
-}
-
-.text p{
-	letter-spacing: 3px;
-	word-spacing: 10px;
-	font-size: 1.8rem;
-	color: black;
-}
-
-.text a{
-	padding: 12px 20px;
-	background-color: black;
-	color: white;
-	font-size: 1rem;
-	letter-spacing: 2px;
-
-	top: 80px;
-	overflow: hidden;
-	transition: .5s;
-	display: inline-block;
-} 
-
-.text a:hover{
-	background-color: white;
-	padding: 12px 20px;
-	color: black;
-	text-decoration: none;
-	transition: all .5s;
-	font-size: 1.1rem;
-}
-
-text a:before{
-	content: '';
-	background-color: magenta;
-	position: absolute;
-	left: 0px;
-	top:0px;
-	width: 100%;
-	height:0%;
-	z-index: -1;
-	text-decoration: none;
-	transition: .5s;
-}
-
-text a:hover::before{
-	height: 100%;
-	text-decoration: none;
-}
-
-.profile-image img{
-	margin-top: 50px;
-	padding-left: 50px;
-}
-
 /* Simple CSS3 Fade-in Animation */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -115,14 +24,216 @@ text a:hover::before{
   animation-delay: 0.25s;
 }
 
-.fadeIn.second{
+.fadeIn.third {
   -webkit-animation-delay: 0.35s;
   -moz-animation-delay: 0.35s;
   animation-delay: 0.35s;
 }
 
-.fadeIn.third {
-  -webkit-animation-delay: 0.45s;
-  -moz-animation-delay: 0.45s;
-  animation-delay: 0.45s;
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  box-shadow: grey;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*------*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container{
+	padding: 0 100px 0 100px;
+}
+
+nav ul, 
+.main-info-section{
+	display: flex;
+	flex-wrap: space-between;
+	justify-content: space-between;
+}
+
+
+li{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+a{
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+
+}
+
+.main-info-section{
+	height: calc(100vh - 81.6px);
+}
+
+.text span{
+	display: inline-block;
+}
+
+.text{
+	margin-top: 160px;
+}
+
+.text h1{ 
+	color: white;
+	font-size: 4.5rem;
+	cursor: context-menu;
+}
+
+span:hover{
+	color: yellow;
+	transition: all .5s;
+}
+
+span.name {
+	color: black;
+}
+span.name:hover{
+	color:white;
+}
+
+span.m-left{
+	margin-left: -10px;
+}
+
+.text p{
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	font-size: 1.4rem;
+	color: #1d1e1f;
+}
+
+.text a{
+	padding: 12px 20px;
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 2px;
+
+	top: 80px;
+	overflow: hidden;
+	transition: .5s;
+	display: inline-block;
+} 
+
+.text a:hover{
+	background-color: white;
+	padding: 12px 20px;
+	color: black;
+	text-decoration: none;
+	transition: all .5s;
+	font-size: 1.1rem;
+}
+
+.text a:active{
+	text-decoration: none;
+}
+
+.text a:visited{
+	text-decoration: none;
+}
+
+text a:before{
+	content: '';
+	background-color: magenta;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height:0%;
+	z-index: -1;
+	text-decoration: none;
+	transition: .5s;
+}
+
+text a:hover::before{
+	height: 100%;
+	text-decoration: none;
+}
+
+.profile-image img{
+	margin-top: 80px;
+	padding-left: 50px;
+}
+
+
+.about-me{
+	height: 100vh;
+	margin-top: 100px;
+}
+
+.about-me-info{
+	padding-top: 50px;
+}
+
+.about-me-info p{
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.about-text{
+	color: white;
+	font-size: 4.8rem;
+	cursor: context-menu;
+}
+
+.about-text span:hover{
+	color:#ebb134;
+}
+
+
+
+.about-me-info p span {
+	color:#ebb134;
+	font-weight: bold;
 }
