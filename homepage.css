@@ -215,7 +215,7 @@ text a:hover::before{
 }
 
 .about-me-info p{
-	letter-spacing: 1px;
+	letter-spacing: 0.8px;
 	word-spacing: 2px;
 	font-size: 1.5rem;
 	color: white;
@@ -231,9 +231,17 @@ text a:hover::before{
 	color:#ebb134;
 }
 
-
-
 .about-me-info p span {
 	color:#ebb134;
 	font-weight: bold;
+}
+
+.skills .text{
+	margin-top: 120px;
+}
+
+.skills .skill-set{
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom:20px;
 }
